@@ -1,0 +1,285 @@
+@import '~quill/dist/quill.snow.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.bg-primary{
+  background-color: #267F6A !important;
+}
+.bg-rose-50{
+  background-color: #eff9f7 !important;
+}
+/* You can add global styles to this file, and also import other style files */
+.animation_animatemill__R_6Zb {
+  animation: animation_a0_t__8ZWLG 2s infinite;
+  animation-delay: 0.8s;
+}
+@keyframes animation_a0_t__8ZWLG {
+  0% {
+    animation-timing-function: ease-out;
+    transform: translate(32px, 23.9px) rotate(0deg) translate(-32px, -23.9px);
+  }
+
+  23.5294% {
+    animation-timing-function: ease-out;
+    transform: translate(32px, 23.9px) rotate(7deg) translate(-32px, -23.9px);
+  }
+  58.8235% {
+    animation-timing-function: cubic-bezier(0, 0, 0.714017, 0.046646);
+    transform: translate(32px, 23.9px) rotate(-8.985577deg) translate(-32px, -23.9px);
+  }
+  100% {
+    transform: translate(32px, 23.9px) rotate(0.328526deg) translate(-32px, -23.9px);
+  }
+}
+.animation_animatepuzzle__Xb6tp {
+  animation: translateAnimation 2s infinite;
+  animation-delay: 0.8s;
+}
+.mobile_animate2__TNV5V {
+  animation: mobile_teal-circle_t__Pjxsc 1.8s 0.8s infinite, mobile_teal-circle_o__31ZFU 1.8s 0.8s infinite;
+}
+
+.mobile_animate1__rJZ0W {
+  animation: mobile_pine-circle_t__S969F 1.8s 0.8s infinite, mobile_pine-circle_o__ZOn6c 1.8s 0.8s infinite;
+}
+
+@keyframes mobile_teal-circle_t__Pjxsc {
+  0% {
+    animation-timing-function: ease-in-out;
+    transform: translate(30.3px, 28.7px) scale(0.07);
+  }
+  27.7777% {
+    animation-timing-function: ease-in-out;
+    transform: translate(30.3px, 28.7px) scale(0.07);
+  }
+  55.5555% {
+    animation-timing-function: ease-in-out;
+    transform: translate(30.3px, 28.7px) scale(0.07);
+  }
+  83.3333% {
+    transform: translate(30.3px, 28.7px) scale(0.07);
+  }
+  100% {
+    transform: translate(30.3px, 28.7px) scale(0.07);
+  }
+}
+
+@keyframes mobile_teal-circle_o__31ZFU {
+  0% {
+    opacity: 0;
+  }
+  27.7778% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mobile_pine-circle_t__S969F {
+  0% {
+    animation-timing-function: ease-in-out;
+    transform: translate(30.3px, 28.7px) scale(0.1);
+  }
+  44.4444% {
+    animation-timing-function: ease-in-out;
+    transform: translate(30.3px, 28.7px) scale(1.2);
+  }
+  72.2222% {
+    animation-timing-function: ease-in-out;
+    transform: translate(30.3px, 28.7px) scale(1);
+  }
+  100% {
+    transform: translate(30.3px, 28.7px) scale(1);
+  }
+}
+
+@keyframes mobile_pine-circle_o__ZOn6c {
+  0% {
+    opacity: 0;
+  }
+  44.4444% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fingerprint_animate3__SwB9z {
+  animation: fingerprint_green01_do__y3QpU 1.8s 0.8s infinite;
+}
+@keyframes fingerprint_green01_do__y3QpU {
+  0% {
+    stroke-dashoffset: 49.76px;
+  }
+
+  23.0769% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+.fingerprint_animate4__1Co5P {
+  animation: fingerprint_green02_do__BwZiT 1.2s infinite;
+}
+@keyframes fingerprint_green02_do__BwZiT {
+  0% {
+    stroke-dashoffset: 39.2px;
+  }
+
+  23.0769% {
+    stroke-dashoffset: 39.2px;
+  }
+  46.1538% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+.fingerprint_animate5__UMGN2 {
+  animation: fingerprint_green01-ex_do__9N1A8 1.2s infinite;
+}
+@keyframes fingerprint_green01-ex_do__9N1A8 {
+  0% {
+    stroke-dashoffset: 48.11px;
+  }
+
+  23.0769% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+.fingerprint_animate7__D8ipd {
+  animation: fingerprint_green03-ex_do__VOHUa 1.2s infinite;
+}
+@keyframes fingerprint_green03-ex_do__VOHUa {
+  0% {
+    stroke-dashoffset: 34.18px;
+  }
+
+  46.1538% {
+    stroke-dashoffset: 34.18px;
+  }
+  61.5385% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+.fingerprint_animate6__ZfINB {
+  animation: fingerprint_green02-ex_do__W2eAB 1.3s 0s infinite;
+}
+@keyframes fingerprint_green02-ex_do__W2eAB {
+  0% {
+    stroke-dashoffset: 42.93px;
+  }
+
+  23.0769% {
+    stroke-dashoffset: 42.93px;
+  }
+  46.1538% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+.fingerprint_animate2__1YBmn {
+  animation: fingerprint_blue04_do__v9RwM 1.3s 0s infinite;
+}
+@keyframes fingerprint_blue04_do__v9RwM {
+  0% {
+    stroke-dashoffset: 1px;
+  }
+
+  53.8462% {
+    stroke-dashoffset: 1px;
+  }
+  61.5385% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+.fingerprint_animate1__bbM_z {
+  animation: fingerprint_blue01_do__v3rM9 1.3s 0s infinite;
+}
+@keyframes fingerprint_blue01_do__v3rM9 {
+  0% {
+    stroke-dashoffset: 49.76px;
+  }
+  23.0769% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+.animation_animate1__RsJl6 {
+  animation: opacityAnimation 2s infinite;
+  animation-delay: 0.8s;
+}
+.animation_animate2__V_XHZ {
+  animation: opacityAnimation 2s infinite;
+  animation-delay: 1.2s;
+}
+.animation_animate3__Mqe9K {
+  animation: opacityAnimation 2s infinite;
+  animation-delay: 1.5s;
+}
+.integrate_animate3__Sg2zZ {
+  animation: opacityAnimation 2.5s infinite;
+  animation-delay: 0s;
+}
+.integrate_animate2__5t83k {
+  animation: opacityAnimation 2.5s infinite;
+  animation-delay: 0.3s;
+}
+.integrate_animate1__5QV8P {
+  animation: opacityAnimation 2.5s infinite;
+  animation-delay: 0.6s;
+}
+
+@keyframes translateAnimation {
+  0%,
+  100% {
+    transform: translateY(6);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+@keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.navbar-active #hamburger div:first-child {
+  --tw-translate-y: 0.375rem;
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x))
+    skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.navbar-active #hamburger div:last-child {
+  --tw-translate-y: -0.25rem;
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x))
+    skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}

@@ -1,0 +1,530 @@
+<!-- hero section -->
+<section>
+  <div class="flex flex-col md:flex-row md:justify-around justify-center items-center p-5 pb-20 lg:px-20 bg-primary text-white relative">
+    <img data-aos="zoom-in-up" data-aos-duration="1000" class="xl:order-last hover:animate-pulse" src="/assets/large.png" alt="" />
+    <div class="xl:w-1/4" data-aos="zoom-in-up" data-aos-duration="1000">
+      <p class="text-3xl lg:text-4xl font-medium md:leading-loose">
+        We work better together with big ideas and amazing talent.
+      </p>
+      <p class="my-5">Connect to the Right People, Right Here, Right Now.</p>
+      <a href="{{appUrl}}/auth/sign-in/" class="btn btn-outline btn-secondary md:btn-wide">Get Started</a>
+    </div>
+    <span class="hidden md:block absolute w-5 h-5 bg-white rounded-full"> </span>
+    <span class="absolute top-64 left-32 w-2 h-2 bg-green-500 rounded-full"> </span>
+    <span class="hidden md:block absolute top-16 left-96 w-5 h-5 bg-orange-500 rounded-full"> </span>
+    <span class="absolute bottom-16 w-5 h-5 bg-orange-500 rounded-full"> </span>
+    <span class="absolute bottom-10 left-32 w-3 h-3 bg-blue-500 rounded-full"> </span>
+    <span class="absolute top-10 right-20 w-5 h-5 bg-yellow-500 rounded-full"> </span>
+    <span class="hidden md:block absolute bottom-20 right-80 w-5 h-5 bg-white rounded-full"> </span>
+    <span class="hidden md:block absolute bottom-40 right-32 w-5 h-5 bg-teal-500 rounded-full"> </span>
+    <img
+      class="hidden md:block absolute -bottom-12 right-20 hover:rotate-6 transition duration-300"
+      src="/assets/triangle-hero.svg" alt="" />
+  </div>
+</section>
+
+<!-- third section - browse by categories -->
+<section class="flex flex-col md:items-center my-20 mx-5 text-neutral">
+  <p class="text-xl md:text-4xl font-semibold text-gray-600">Jobs By Category</p>
+  <div class="flex flex-wrap md:items-center md:justify-center gap-5 col-span-5 py-10" data-aos="zoom-in-up" data-aos-duration="1000">
+
+    <div (click)="goToJobs(cat.catId, 'jobs')" *ngFor="let cat of catList" data-aos="zoom-in-down" data-aos-duration="1000"
+      class="rounded-lg px-5 py-3 w-full md:w-64 bg-rose-50 shadow-lg hover:shadow-xl hover:-translate-y-1 ease-in-out transition duration-300 cursor-pointer">
+      <p class="text-lg font-medium">{{cat.catTitle}}</p>
+      <p class="text-sm text-gray-500">{{cat.activeJobs}} Active Posts</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- second section - manage your entire process-->
+<section class="flex flex-col items-center text-neutral">
+  <div class="flex items-center justify-center md:mt-10 px-5 text-gray-600 relative">
+    <p class="text-xl md:text-3xl lg:text-5xl font-semibold font-popins text-start md:text-center md:2/3 lg:w-1/2">
+      Manage your entire process, from sourcing to employee onboarding and management
+    </p>
+    <span
+      class="hidden md:block absolute top-10 left-96 w-0 h-0 border-l-[10px] border-l-transparent border-t-[20px] border-t-red-500 border-r-[10px] border-r-transparent"
+    >
+    </span>
+    <span class="hidden md:block absolute top-20 right-96 w-3 h-3 bg-orange-500"> </span>
+    <span
+      class="absolute top-32 right-56 w-0 h-0 border-l-[10px] border-l-transparent border-t-[20px] border-t-green-500 border-r-[10px] border-r-transparent"
+    >
+    </span>
+    <span class="hidden md:block absolute top-20 left-72 w-3 h-3 rounded-full bg-blue-600"> </span>
+  </div>
+  <div class="flex flex-wrap items-center justify-around xl:w-3/4 gap-5 gap-y-10 px-5 md:py-10">
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      class="flex flex-col gap-2 md:items-center justify-center sm:w-[48%]"
+    >
+      <img src="/assets/1.jpeg" alt="" />
+      <p class="text-lg md:text-xl font-semibold text-orange-500 mt-5">SOURCE & ATTRACT</p>
+      <p class="text-xl md:text-2xl font-semibold md:text-center">Find and attract candidates</p>
+      <p class="md:w-4/5 text-justify">
+        Fill your pipeline quickly with one-click job posting to 200+ sites, AI-powered sourcing, employee referrals and
+        more.
+      </p>
+      <a [routerLink]="'source-and-attract'" class="text-orange-500 link-hover">Learn More</a>
+    </div>
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      class="flex flex-col gap-2 md:items-center justify-center sm:w-[48%]"
+    >
+      <img src="/assets/2.jpg" alt="" />
+      <p class="text-lg md:text-xl font-semibold text-rose-500 mt-5">AUTOMATE & HIRE</p>
+      <p class="text-xl md:text-2xl font-semibold md:text-center">Make the best hire, in half the time</p>
+      <p class="md:w-4/5 text-justify">
+        Move faster on a recruiting platform that automates process and manual tasks, like scheduling interviews and
+        getting approvals.
+      </p>
+      <a [routerLink]="'automate-and-hire'" class="text-rose-500 link-hover">Learn More</a>
+    </div>
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      class="flex flex-col gap-2 md:items-center justify-center sm:w-[48%]"
+    >
+      <img src="/assets/3.jpg" alt="" />
+      <p class="text-lg md:text-xl font-semibold text-teal-500 mt-5">ONBOARD & MANAGE</p>
+      <p class="text-xl md:text-2xl font-semibold md:text-center">Great hires become great employees</p>
+      <p class="md:w-4/5 text-justify">
+        Create custom onboarding experiences, have new hires e-sign documents, and store all employee info in one place.
+      </p>
+      <a [routerLink]="'hris'" class="text-teal-500 link-hover">Learn More</a>
+    </div>
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      class="flex flex-col gap-2 md:items-center justify-center sm:w-[48%]"
+    >
+      <img src="/assets/4.jpg" alt="" />
+      <p class="text-lg md:text-xl font-semibold text-blue-500 mt-5">EVALUATE & COLLABORATE</p>
+      <p class="text-xl md:text-2xl font-semibold md:text-center">Move the right applicants forward</p>
+      <p class="md:w-4/5 text-justify">
+        Collaborate with hiring teams to evaluate applicants, gather feedback and decide who's best, all in one
+        recruiting system.
+      </p>
+      <a [routerLink]="'collaborate'" class="text-blue-500 link-hover">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- fourth section - more reasons -->
+<section class="flex flex-col items-center my-20 mx-5 text-neutral">
+  <p class="text-xl md:text-5xl font-semibold text-gray-600 lg:2/3 xl:w-1/2 lg:text-center">
+    More reasons companies around the world choose Jobcart
+  </p>
+  <div class="flex flex-wrap items-center justify-center gap-5 gap-y-10 py-10">
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      class="flex flex-col items-center justify-center md:w-[30%] text-center"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+        <path class="st0" d="M38.5,24.5L38.5,29.5" stroke-linecap="square" stroke="#008075" fill="none" />
+        <path class="st1" d="M15,35.5L4.5,35.5L4.5,4.5L38.5,4.5L38.5,19M21.5,13L21.5,16" stroke="#008075" fill="none" />
+        <path
+          class="st1"
+          d="M19.5,15C18.1,15.7,17.3,17.2,17.3,18.7C17.3,21.1,19.2,23,21.6,23C24,23,25.9,21.1,25.9,18.7C25.9,17.1,25,15.7,23.7,15M22,59.5L21,59.5M48.5,39L48.5,59.5L24,59.5M14.5,53L14.5,29.5L48.5,29.5L48.5,34"
+          stroke="#008075"
+          fill="none"
+        />
+        <ellipse
+          class="st2 integrate_animate1__5QV8P"
+          rx="2"
+          ry="2"
+          stroke-linecap="round"
+          stroke="#02BFD3"
+          fill="none"
+          opacity="0"
+          transform="translate(40.5 44.5)"
+        />
+        <ellipse
+          class="st2 integrate_animate2__5t83k"
+          rx="2"
+          ry="2"
+          stroke-linecap="round"
+          stroke="#02BFD3"
+          fill="none"
+          opacity="0"
+          transform="translate(31.5 44.5)"
+        />
+        <ellipse
+          class="st2 integrate_animate3__Sg2zZ"
+          rx="2"
+          ry="2"
+          stroke-linecap="round"
+          stroke="#02BFD3"
+          fill="none"
+          opacity="0"
+          transform="translate(22.5 44.5)"
+        />
+        <path
+          class="st1"
+          d="M38.5,24.5C37.4,24.5,36.5,23.6,36.5,22.5L36.5,20.5C36.5,19.4,37.4,18.5,38.5,18.5C39.6,18.5,40.5,19.4,40.5,20.5L40.5,22.5C40.5,23.6,39.6,24.5,38.5,24.5ZM48.5,39.5C47.4,39.5,46.5,38.6,46.5,37.5L46.5,35.5C46.5,34.4,47.4,33.5,48.5,33.5C49.6,33.5,50.5,34.4,50.5,35.5L50.5,37.5C50.5,38.6,49.6,39.5,48.5,39.5Z"
+          stroke="#008075"
+          fill="none"
+        />
+        <path
+          class="st1"
+          d="M40.7,21.5L52,21.5C56.1,21.5,59.7,24.7,59.8,28.8C59.9,32.9,56.6,36.4,52.5,36.5C52.4,36.5,52.4,36.5,52.3,36.5L51,36.5"
+          stroke="#008075"
+          fill="none"
+          stroke-dasharray="36.229999999999997 36.229999999999997"
+        />
+      </svg>
+
+      <p class="text-lg font-semibold">World-class partners</p>
+      <p class="text-gray-500 md:w-1/2">Connect with LinkedIn, Google and 70+ other apps and tools to get more done.</p>
+    </div>
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      class="flex flex-col items-center justify-center md:w-[30%] text-center"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+        <path
+          d="M12,41L7,41C6.46957,41,5.96086,40.7893,5.58579,40.4142C5.21071,40.0391,5,39.5304,5,39C5,38.4696,5.21071,37.9609,5.58579,37.5858C5.96086,37.2107,6.46957,37,7,37L12,37L12,38L7,38C6.73478,38,6.48043,38.1054,6.29289,38.2929C6.10536,38.4804,6,38.7348,6,39C6,39.2652,6.10536,39.5196,6.29289,39.7071C6.48043,39.8946,6.73478,40,7,40L12,40Z"
+          fill="#008075"
+        />
+        <path
+          d="M50.5,47L45,47L45,30L50.5,30C52.72,30,54,31.64,54,34.5L54,42.5C54,45.36,52.72,47,50.5,47ZM46,46L50.5,46C52.16,46,53,44.82,53,42.5L53,34.5C53,32.18,52.16,31,50.5,31L46,31Z"
+          fill="#008075"
+        />
+        <path
+          d="M58.39,41L54,41L54,40L58.39,40C58.6552,40,58.9096,39.8946,59.0971,39.7071C59.2846,39.5196,59.39,39.2652,59.39,39C59.39,38.7348,59.2846,38.4804,59.0971,38.2929C58.9096,38.1054,58.6552,38,58.39,38L54,38L54,37L58.39,37C58.9204,37,59.4291,37.2107,59.8042,37.5858C60.1793,37.9609,60.39,38.4696,60.39,39C60.39,39.5304,60.1793,40.0391,59.8042,40.4142C59.4291,40.7893,58.9204,41,58.39,41Z"
+          fill="#008075"
+        />
+        <path
+          d="M57,37L56,37L56,26.5C56.0048,24.96,55.8571,23.4232,55.5592,21.9123C55.2612,20.4013,54.8144,18.9235,54.2254,17.5006C53.6364,16.0776,52.9079,14.7165,52.0508,13.437C51.1936,12.1576,50.2119,10.9661,49.12,9.88C45.821,6.57235,41.6106,4.32352,37.027,3.4209C32.4434,2.51828,27.6947,3.00288,23.3879,4.81277C19.0811,6.62265,15.4118,9.67561,12.8489,13.5815C10.286,17.4873,8.94596,22.0687,9,26.74L9,37L8,37L8,26.74C7.96817,20.2422,10.5189,13.9979,15.091,9.38074C19.6632,4.76359,25.8822,2.15183,32.38,2.12C38.8778,2.08817,45.1221,4.63889,49.7393,9.21103C54.3564,13.7832,56.9682,20.0022,57,26.5Z"
+          fill="#008075"
+        />
+        <path
+          d="M47.86,52L39,52L39,51L47.86,51C48.0097,51,48.1579,50.9705,48.2963,50.9132C48.4346,50.8559,48.5602,50.772,48.6661,50.6661C48.772,50.5602,48.8559,50.4346,48.9132,50.2963C48.9705,50.1579,49,50.0097,49,49.86L49,47L50,47L50,49.86C50,50.141,49.9446,50.4193,49.8371,50.6789C49.7296,50.9386,49.5719,51.1745,49.3732,51.3732C49.1745,51.5719,48.9386,51.7296,48.6789,51.8371C48.4193,51.9446,48.141,52,47.86,52Z"
+          fill="#008075"
+        />
+        <path
+          d="M20,47L14.5,47C12.28,47,11,45.36,11,42.5L11,34.5C11,31.64,12.28,30,14.5,30L20,30ZM14.5,31C12.84,31,12,32.18,12,34.5L12,42.5C12,44.82,12.84,46,14.5,46L19,46L19,31Z"
+          fill="#008075"
+        />
+        <path
+          d="M53,28L52,28L52,26.22C51.9886,24.4292,51.7276,22.6488,51.2245,20.9301C50.7215,19.2114,49.9813,17.5712,49.0254,16.0569C48.0695,14.5425,46.9072,13.1688,45.572,11.9754C44.2368,10.782,42.7417,9.78059,41.13,9L41.56,8.1C43.2564,8.92092,44.83,9.97441,46.2354,11.23C47.6408,12.4856,48.8642,13.9311,49.8702,15.5247C50.8763,17.1182,51.6553,18.8443,52.1846,20.653C52.7138,22.4618,52.9883,24.3355,53,26.22Z"
+          fill="#008075"
+        />
+        <path
+          d="M13,28L12,28L12,26.22C12,17.8,18.17,11,24.28,8.05L24.72,8.95C18.89,11.79,13,18.23,13,26.22Z"
+          fill="#008075"
+        />
+        <path
+          d="M39.14,12.43L38.75,12.25C37.7936,11.8427,36.7985,11.5328,35.78,11.325C34.7614,11.1171,33.7245,11.0124,32.685,11.0124C31.6455,11.0124,30.6086,11.1171,29.59,11.325C28.5715,11.5328,27.5764,11.8427,26.62,12.25L26.24,12.42L21.64,5.42L22.48,4.87L26.62,11.14C27.5854,10.7604,28.5842,10.4721,29.6034,10.2789C30.6226,10.0857,31.6577,9.98844,32.695,9.98844C33.7323,9.98844,34.7674,10.0857,35.7866,10.2789C36.8058,10.4721,37.8046,10.7604,38.77,11.14L42.91,4.9L43.75,5.45Z"
+          fill="#008075"
+        />
+        <path
+          d="M37.5,54L35.5,54C34.837,54,34.2011,53.7366,33.7322,53.2678C33.2634,52.7989,33,52.163,33,51.5C33,50.837,33.2634,50.2011,33.7322,49.7322C34.2011,49.2634,34.837,49,35.5,49L37.5,49C38.163,49,38.7989,49.2634,39.2678,49.7322C39.7366,50.2011,40,50.837,40,51.5C40,52.163,39.7366,52.7989,39.2678,53.2678C38.7989,53.7366,38.163,54,37.5,54ZM35.5,50C35.1022,50,34.7206,50.158,34.4393,50.4393C34.158,50.7206,34,51.1022,34,51.5C34,51.8978,34.158,52.2794,34.4393,52.5607C34.7206,52.842,35.1022,53,35.5,53L37.5,53C37.8978,53,38.2794,52.842,38.5607,52.5607C38.842,52.2794,39,51.8978,39,51.5C39,51.1022,38.842,50.7206,38.5607,50.4393C38.2794,50.158,37.8978,50,37.5,50Z"
+          fill="#008075"
+        />
+        <path
+          class="cls-2 animation_animate1__RsJl6"
+          d="M34.5,46.5C33.1739,46.5,31.9021,47.0268,30.9645,47.9645C30.0268,48.9021,29.5,50.1739,29.5,51.5C29.5,52.8261,30.0268,54.0979,30.9645,55.0355C31.9021,55.9732,33.1739,56.5,34.5,56.5"
+          stroke="#02bfd3"
+          fill="none"
+        />
+        <path
+          class="cls-2 animation_animate2__V_XHZ"
+          d="M34.5,43.5C32.3783,43.5,30.3434,44.3429,28.8431,45.8431C27.3429,47.3434,26.5,49.3783,26.5,51.5C26.5,53.6217,27.3429,55.6566,28.8431,57.1569C30.3434,58.6571,32.3783,59.5,34.5,59.5"
+          stroke="#02bfd3"
+          fill="none"
+          opacity="0"
+        />
+        <path
+          class="cls-2 animation_animate3__Mqe9K"
+          d="M34.5,40.5C31.5826,40.5,28.7847,41.6589,26.7218,43.7218C24.6589,45.7847,23.5,48.5826,23.5,51.5C23.5,54.4174,24.6589,57.2153,26.7218,59.2782C28.7847,61.3411,31.5826,62.5,34.5,62.5"
+          stroke="#02bfd3"
+          fill="none"
+          opacity="0"
+        />
+      </svg>
+
+      <p class="text-lg font-semibold">Fast, global support</p>
+      <p class="text-gray-500 md:w-1/2">Reach our award-winning support team in about 25 seconds by phone or chat.</p>
+    </div>
+
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      class="flex flex-col items-center justify-center md:w-[30%] text-center"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+        <path
+          class="st0"
+          d="M37.4,53.6L37.4,40.9L37.4,38.9L37.4,30.2C37.4,29,37,27.9,36.4,27"
+          stroke="#008075"
+          fill="none"
+        ></path>
+        <path class="st0" d="M37.4,56.4L37.4,55.4" stroke="#008075" fill="none"></path>
+        <path
+          id="blue01"
+          class="st1 fingerprint_animate1__bbM_z"
+          d="M10.5,59.9L10.5,58.9"
+          stroke="#02BFD3"
+          fill="none"
+          stroke-dashoffset="1"
+          stroke-dasharray="1 1"
+        ></path>
+        <path
+          class="st0"
+          d="M35.3,25.7C34.2,24.8,32.7,24.4,31.2,24.6C28.5,24.9,26.5,27.4,26.5,30.2L26.5,38.9L26.5,40.9L26.5,51.9"
+          stroke="#008075"
+          fill="none"
+        ></path>
+        <path
+          class="st0"
+          d="M22.7,28C23.7,23.1,28.4,19.9,33.3,20.6C38,21.2,41.5,25.5,41.5,30.3L41.5,59.9"
+          stroke="#008075"
+          fill="none"
+        ></path>
+        <path class="st0" d="M22.5,46.8L22.5,29.9" stroke="#008075" fill="none"></path>
+        <path class="st0" d="M22.5,48.9L22.5,49.9" stroke="#008075" fill="none"></path>
+        <path
+          id="blue04"
+          class="st1 fingerprint_animate2__1YBmn"
+          d="M53.6,50.1L53.6,51.1"
+          stroke="#02BFD3"
+          fill="none"
+          stroke-dashoffset="1"
+          stroke-dasharray="1 1"
+        ></path>
+        <path
+          id="green01"
+          class="st0 fingerprint_animate3__SwB9z"
+          d="M45.5,51.1L45.5,30.4C45.5,23.5,40.4,17.4,33.6,16.6C30.3,16.2,27.2,17,24.7,18.6"
+          stroke="#008075"
+          fill="none"
+          stroke-dashoffset="49.76"
+          stroke-dasharray="49.759999999999998 49.759999999999998"
+        ></path>
+        <path
+          id="green02"
+          class="st0 fingerprint_animate4__1Co5P"
+          d="M23,19.9C20.3,22.4,18.5,26,18.5,30L18.5,38.9L18.5,40.9L18.5,57.9"
+          stroke="#008075"
+          fill="none"
+          stroke-dashoffset="39.2"
+          stroke-dasharray="39.200000000000003 39.200000000000003"
+        ></path>
+        <path
+          class="st0"
+          d="M14.5,49.9L14.5,30.4C14.5,21.3,21.3,13.3,30.4,12.5C40,11.6,48.2,18.6,49.4,27.7"
+          stroke="#008075"
+          fill="none"
+        ></path>
+        <path class="st0" d="M49.5,29.9L49.5,38.9L49.5,40.9L49.5,57.9" stroke="#008075" fill="none"></path>
+        <path
+          id="green01-ex"
+          class="st0 fingerprint_animate5__UMGN2"
+          d="M57.5,55L57.5,30C57.5,21.8,53.7,14.6,47.7,9.9"
+          stroke="#008075"
+          fill="none"
+          stroke-dashoffset="48.11"
+          stroke-dasharray="48.109999999999999 48.109999999999999"
+        ></path>
+        <path
+          id="green02-ex"
+          class="st0 fingerprint_animate6__ZfINB"
+          d="M45.8,8.6C41.7,5.9,36.9,4.5,32,4.5C21.9,4.5,13.2,10.3,9.1,18.8"
+          stroke="#008075"
+          fill="none"
+          stroke-dashoffset="42.93"
+          stroke-dasharray="42.93 42.93"
+        ></path>
+        <path
+          id="green03-ex"
+          class="st0 fingerprint_animate7__D8ipd"
+          d="M8.1,21C7.1,23.8,6.5,26.8,6.5,30L6.5,38.9L6.5,40.9L6.5,55"
+          stroke="#008075"
+          fill="none"
+          stroke-dashoffset="34.18"
+          stroke-dasharray="34.18 34.18"
+        ></path>
+        <path
+          id="blue03"
+          class="st1 fingerprint_animate8__Zxu96"
+          d="M27.7,9C28.6,8.8,29.5,8.7,30.5,8.6C33.1,8.4,35.7,8.7,38.1,9.4L38.1,9.4C47.2,12,53.6,20.7,53.6,30.5L53.6,44.8L53.6,48.3"
+          stroke="#02BFD3"
+          fill="none"
+          stroke-dashoffset="56.23"
+          stroke-dasharray="56.229999999999997 56.229999999999997"
+        ></path>
+        <path
+          id="blue02"
+          class="st1 fingerprint_animate9__513Dm"
+          d="M10.5,56.8L10.5,30.5C10.5,21,16.6,12.6,25.3,9.7"
+          stroke="#02BFD3"
+          fill="none"
+          stroke-dashoffset="53.44"
+          stroke-dasharray="53.439999999999998 53.439999999999998"
+        ></path>
+        <g id="horizontal-line" transform="translate(4 38)">
+          <rect width="54" height="3" fill="#fff" transform="translate(1)"></rect>
+          <path
+            class="st0"
+            d="M4,38.4L60,38.4M4,41.4L60,41.4"
+            stroke="#008075"
+            fill="none"
+            transform="translate(-4 -38)"
+          ></path>
+        </g>
+      </svg>
+
+      <p class="text-lg font-semibold">Trusted security</p>
+      <p class="text-gray-500 md:w-1/2">
+        Sleep soundly knowing your data is always safe and always accessible. We’re ISO-certified.
+      </p>
+    </div>
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      class="flex flex-col items-center justify-center md:w-[30%] text-center"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+        <ellipse
+          id="pine-circle"
+          rx="9"
+          ry="9"
+          stroke="#008075"
+          fill="none"
+          opacity="0"
+          class="mobile_animate1__rJZ0W"
+        ></ellipse>
+        <ellipse
+          id="teal-circle"
+          rx="9"
+          ry="9"
+          stroke="#00b7cd"
+          fill="none"
+          stroke-width="1.5"
+          opacity="0"
+          class="mobile_animate2__TNV5V"
+        ></ellipse>
+        <path
+          class="st2"
+          d="M37.8,45L37.8,40.2C37.8,38.8,36.7,37.7,35.3,37.7C33.9,37.7,32.8,38.8,32.8,40.2L32.8,45M47.8,57L47.8,43.9C47.8,42.5,46.7,41.4,45.3,41.4C43.9,41.4,42.8,42.5,42.8,43.9L42.8,51M42.8,48L42.8,41.7C42.8,40.3,41.7,39.2,40.3,39.2C38.9,39.2,37.8,40.3,37.8,41.7L37.8,47M22.8,60.5L22.8,49.2C22.8,47.8,23.9,46.7,25.3,46.7C26.7,46.7,27.8,47.8,27.8,49.2L27.8,52M27.8,52L27.8,43.1L27.8,44.1L27.8,28.9C27.8,27.5,28.9,26.4,30.3,26.4C31.7,26.4,32.8,27.5,32.8,28.9L32.8,45"
+          stroke="#008075"
+          fill="#fff"
+        ></path>
+        <path
+          class="st2"
+          d="M44.5,42L44.5,2.5L15.5,2.5L15.5,50.5L22.3,50.5M16,41.5L28.2,41.5M16,8.5L44.2,8.5M33.6,5.5L29.6,5.5M27.6,5.5L26.6,5.5M47.8,60.5L47.8,59.5L47.8,60.5Z"
+          stroke="#008075"
+          fill="none"
+        ></path>
+        <defs>
+          <filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="47.2" y="60" width="1" height="0.5">
+            <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"></feColorMatrix>
+          </filter>
+          <mask id="b_1_">
+            <g class="st3" filter="url(#Adobe_OpacityMaskFilter)">
+              <path
+                id="a_1_"
+                class="st4"
+                d="M47.2,59.8L48.2,59.8L48.2,60.6L47.2,60.6L47.2,59.8Z"
+                fill="#FFF"
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+              ></path>
+            </g>
+          </mask>
+        </defs>
+        <path class="st5" d="M47.8,60L47.8,60.5" stroke="#008075" fill="none" mask="url(#b_1_)"></path>
+      </svg>
+
+      <p class="text-lg font-bold">Anywhere recruiting</p>
+      <p class="text-gray-500 md:w-1/2">Keep things moving from anywhere with our top-rated mobile hiring app.</p>
+    </div>
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      class="flex flex-col items-center justify-center md:w-[30%] text-center"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 64 64"
+        width="64"
+        height="64"
+        style="white-space: preserve-spaces"
+      >
+        <path
+          fill="#fff"
+          stroke="#008075"
+          stroke-miterlimit="10"
+          d="M27 52.5h-9.2c.6-.7.9-1.7.9-2.6 0 0 0 0 0 0 0-2.4-2-4.3-4.4-4.3H14c-2.4.2-4.2 2.4-4 4.8.1.8.4 1.5.8 2.1H.5v-26h10.4c-.6.7-.9 1.7-.9 2.6v.1c0 2.4 2 4.3 4.4 4.3h.3c2.4-.2 4.2-2.3 4-4.8-.1-.8-.4-1.5-.9-2.1H27V36c.7-.6 1.6-.9 2.5-.9 2.1 0 4 1.4 4.4 3.5.5 2.4-1.1 4.6-3.4 5.1-1.2.3-2.5 0-3.4-.8l-.1 9.6z"
+          transform="translate(4.75 5.5)"
+        ></path>
+        <path
+          fill="none"
+          stroke="#008075"
+          stroke-dasharray="142 142"
+          stroke-dashoffset="0"
+          stroke-linecap="square"
+          stroke-linejoin="miter"
+          stroke-miterlimit="10"
+          d="M54 .5H43.9c1.4 1.9 1 4.7-.9 6.1-.7.5-1.6.8-2.5.8-2.4 0-4.2-2-4.2-4.3 0 0 0 0 0 0 0-.9.3-1.8.9-2.6H27V10c-1-.8-2.3-1-3.5-.7-1.5.4-2.7 1.5-3.1 3.1-.6 2.3.7 4.7 3 5.3.3.1.7.2 1.1.2.9 0 1.8-.3 2.5-.8v9.5l27 .1z"
+          class="animation_animatepuzzle__Xb6tp"
+          transform="translate(4.75 2.5)"
+        ></path>
+        <path
+          fill="#fff"
+          stroke="#008075"
+          stroke-miterlimit="10"
+          d="M54 36c-1-.8-2.2-1.1-3.4-.8-2.3.6-3.8 2.9-3.2 5.3.5 1.9 2.1 3.2 4.1 3.3.9 0 1.8-.3 2.5-.8v9.5H27V43c1 .8 2.2 1.1 3.4.8 2.4-.5 3.9-2.7 3.4-5.1-.4-2.1-2.2-3.6-4.4-3.5-.9 0-1.8.3-2.5.9v-9.5h10.2c-1.4-1.9-1-4.7.9-6.1.7-.5 1.6-.8 2.5-.8 2.4.1 4.3 2.1 4.2 4.5 0 .9-.3 1.8-.8 2.5H54z"
+          transform="translate(4.75 5.5)"
+        ></path>
+        <path
+          fill="none"
+          stroke="#02BFD3"
+          stroke-dasharray="41 41"
+          stroke-miterlimit="10"
+          d="M24 .5H.5V18"
+          transform="translate(4.75 5.5)"
+        ></path>
+        <path
+          fill="none"
+          stroke="#02BFD3"
+          stroke-dasharray="1 1"
+          stroke-miterlimit="10"
+          d="M.5 21v1"
+          transform="translate(4.75 5.5)"
+        ></path>
+      </svg>
+
+      <p class="text-lg font-semibold">Expert advice</p>
+      <p class="text-gray-500 md:w-1/2">Make the right moves with help from 1000s of hiring templates and tutorials.</p>
+    </div>
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      class="flex flex-col items-center justify-center md:w-[30%] text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" style="white-space: preserve-spaces">
+        <path fill="none" stroke="#008075" stroke-width="1.053" d="M31.6 56.4v-29M31.6 59.4v-1"></path>
+        <g class="animation_animatemill__R_6Zb">
+          <path fill="#fff" stroke-width="1.053"
+            d="M0 .9c.5.5 15.7-13.1 16.1-13 .4.1 2.4 1.1 2.4 1.1s3.2-1.7 3.1-1.1c-.1.6 5.9 6.8 5.4 6.7-.5-.1-8 6.7-8.5 6.3C18 .5-.5.4 0 .9z"
+            transform="translate(13.5 39)" ></path>
+          <path fill="none" stroke="#008075" stroke-width="1.053"
+            d="M31.6 21.4v-13M29.1 23.9h-13M48.1 23.9h-13M34.2 21.9l16.3-14H32l-8.3 6.6m16.8 18.6L32 39.9H13.5l16.1-13" ></path>
+          <path fill="none" stroke="#008075" stroke-width="1.053"
+            d="M34.6 26.9l14 15.5V23.9l-6.7-8.4M22.3 32.4l-6.7-8.5V5.4l14 16.3M31.6 39.8V27.4" ></path>
+        </g>
+        <path fill="#fff" stroke="#02BFD3" d="M35.6 24.4c0 1.9-1.6 3.5-3.5 3.5s-3.5-1.6-3.5-3.5 1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5z" ></path>
+      </svg>
+
+      <p class="text-lg font-semibold">Assisted onboarding</p>
+      <p class="text-gray-500 md:w-1/2">Get up and running in days, not months — Jobcart is just that easy to use.</p>
+    </div>
+  </div>
+</section>
+<app-lets-grow></app-lets-grow>

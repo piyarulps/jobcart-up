@@ -1,0 +1,145 @@
+<nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900" (scroll)="onscroll()"
+  [ngClass]="navbarfixed?'fixed':'nofixed'">
+
+  <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-8">
+    <a href="/" class="normal-case text-xl"> <img src="/assets/logo.png" alt="" class="h-10" /></a>
+    <button data-collapse-toggle="mega-menu-full" type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      aria-controls="mega-menu-full" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15" />
+      </svg>
+    </button>
+    <div id="mega-menu-full" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+      <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+        <li>
+          <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown"
+            class="text-clr flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+            Solutions <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a href="/pricing"
+            class="text-clr py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-clr md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+            Pricing
+          </a>
+        </li>
+        <li>
+          <a href="blog"
+            class="text-clr block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="contact-us"
+            class="text-clr block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+            Contact
+          </a>
+        </li>
+        <li *ngIf="isMobileView">
+          <a href="{{appURL}}auth/sign-in"
+            class="text-clr block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+            Login
+          </a>
+        </li>
+        <li *ngIf="isMobileView">
+          <a href="{{appURL}}auth/sign-up/employer"
+            class="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+            Sing up
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex items-center md:order-2" *ngIf="!isMobileView">
+      <a href="{{appURL}}auth/sign-in"
+        class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-lg 
+        px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Login</a>
+      <a href="{{appURL}}auth/sign-up/employer"
+        class="text-white bg-green-800 hover:bg-green-600 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-lg px-4
+         py-2 md:px-5 md:py-2.5 mr-1 md:mr-2  focus:outline-none dark:focus:ring-blue-800">Sign
+        up</a>
+      <button data-collapse-toggle="mega-menu-icons" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100
+         focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-icons"
+        aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+
+
+
+  <div id="mega-menu-full-dropdown"
+    class="mt-1 bg-white border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600 hidden">
+    <div
+      class="sub-menu grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:grid-cols-3 md:px-6">
+      <ul aria-labelledby="mega-menu-full-dropdown-button">
+        <li>
+          <a href="staffing-solutions" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+            <div class="font-semibold">Staffing Solutions</div>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              Smooth associate onboarding, access to the Health&Safety, WHMIS and other courses
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="temporary-employment" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+            <div class="font-semibold">Temporary Employment</div>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              Temporary employment with cutting-edge technologies and specialized staffing strategies
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="direct-hires" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+            <div class="font-semibold">Job Marketplace</div>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              Hire from our database of candidates. We are an AI equipped job marketplace
+            </span>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="temporary-to-permanent" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+            <div class="font-semibold">Temporary to Permanent</div>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              Find the suitable candidate for the position and then easily convert them to a full-time worker.
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="job-order" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+            <div class="font-semibold">Vendor Management</div>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              Audit vendor's hiring process anytime and from anyhwhere, manage discrepancies and view reports
+            </span>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="placement-and-fulfillment" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+            <div class="font-semibold">Placement & Fulfillment</div>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              We intelligently compile profile information from applicants to identify the best match.
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</nav>

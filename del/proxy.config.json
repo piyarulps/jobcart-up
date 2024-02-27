@@ -1,0 +1,268 @@
+{
+   "/agn-admin-user/*": {
+      "target": "http://localhost:8020/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/agn-admin-timesheets/*": {
+      "target": "http://localhost:8020/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/app-tsapi/*": {
+      "target": "http://localhost:8020/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/auth-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },   
+   "/geoapi/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },   
+   "/company-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/account/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/emp/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/emp-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/clt-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/loc-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/loc-inst-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/usrpost-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/postques-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/web/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/web-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/post-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/crs-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/categories/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/tag/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/dt-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/smsapi/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/usrjob/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/dashboard-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/lms-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/log-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/blog-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/paperwork-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/glb-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/wf-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/agn-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/ts-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/bridge-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/rider-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/wordsmith-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/priv-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/chat-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   },
+   "/billing-api/*": {
+      "target": "http://localhost:1010/",
+      "secure": true,
+      "pathRewrite": {"^/" : ""},
+      "changeOrigin": true,
+      "logLevel": "debug"
+   }
+}

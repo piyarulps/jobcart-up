@@ -1,0 +1,181 @@
+.row {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.styles_row-stretch__tAa_2 {
+    align-items: stretch;
+    position: relative;
+}
+.footer_footer-upper__NHeY0 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 22px;
+    line-height: 2.2rem;
+}
+.styles_bg-valentino__H0AAY {
+    background-color: #373656;
+}
+.styles_white__WbD_6 {
+    color: #fff;
+    font-size: 16px;
+}
+.container_container__NjHmW {
+    margin: 0 auto;
+    max-width: 1250px;
+    position: relative;
+    width: 100%;
+}
+.footer_footer-menu__4BjIY li {
+    font-size: 16px !important;
+    /* font-size: 1.6rem; */
+    margin-right: 32px;
+    max-width: 210px;
+    /* padding-bottom: 16px; */
+    vertical-align: top;
+}
+.footer_footer-menu__4BjIY {
+    border-bottom: 1px solid #4b4a67;
+    padding: 40px 0;
+}
+.container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.col-xs-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+.styles_flex-holder-space-between__dOuG5 {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.styles_flex-holder__P4QT_ {
+    /* align-items: center; */
+    display: flex;
+}
+ol, ul {
+    list-style: none;
+}
+.footer_footer-menu__4BjIY h5 {
+    font-size: 16px;
+    /* font-size: 1.6rem; */
+    /* margin-bottom: 16px; */
+}
+.styles_base-uppercase-xbold__sBFwB {
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 24px;
+    line-height: 2.4rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+.styles_white__WbD_6 {
+    color: #fff;
+}
+.links_link-highlighted__a5CBX {
+    background: linear-gradient(currentColor,currentColor) 0 100% no-repeat;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    color: #fff;
+    display: inline;
+    transition: background-size .5s ease 0s;
+}
+
+.links_link__3hqDD {
+    font-size: 14px;
+    outline: none;
+    text-decoration: none;
+}
+.links_link-highlighted__a5CBX:hover {
+    background-size: 100% 1px;
+}
+.copyright_footer-notes__e3Yqw {
+    padding: 16px 0;
+}
+/* .copyright_bg-white-lilac__MG_Zv {
+    background-color: #f0f0fb;
+    color: #333e49;
+} */
+.styles_left-to-c__WITFr, .styles_left__RwDLW {
+    text-align: left;
+}
+.copyright_footer-notes__inner__KUNdA {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.styles_no-margin-b-to-sm-p__ejMS7, .styles_no-margin-p__RYgNA {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.footer_footer-contact__Q_YpZ p {
+    font-size: 14px;
+    /* font-size: 1.6rem; */
+}
+.styles_center-to-l__L7qLW, .styles_centered__PFZ73 {
+    text-align: center;
+}
+.styles_bg-valentino__H0AAY a {
+    color: #fff;
+}
+.links_link__3hqDD {
+    /* font-size: inherit; */
+    outline: none;
+    text-decoration: none;
+}
+.footer_social-icon__OO9dP {
+    display: inline-block;
+    font-size: 0;
+    height: 24px;
+    line-height: 0;
+    position: relative;
+    width: 24px;
+}
+.footer_social-icon__OO9dP img {
+    fill: #fff;
+}
+
+@media only screen and (min-width: 992px){
+.start-lg {
+    justify-content: flex-start;
+    text-align: start;
+}
+.col-lg-4 {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+}
+.col-lg-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+.col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-offset-0, .col-lg-offset-1, .col-lg-offset-10, .col-lg-offset-11, .col-lg-offset-12, .col-lg-offset-2, .col-lg-offset-3, .col-lg-offset-4, .col-lg-offset-5, .col-lg-offset-6, .col-lg-offset-7, .col-lg-offset-8, .col-lg-offset-9 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+}
+@media only screen and (min-width: 576px){
+.middle-sm {
+    align-items: center;
+}
+}
+.copyright_footer{
+    padding: 20px 0;
+}
+.footer-text {
+    font-size: large;
+}
+.icon-font{
+    font-size: 1.8rem !important;
+    justify-content: center;
+}
+.icon-sp{
+    padding: 6px !important;
+}

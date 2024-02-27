@@ -1,0 +1,244 @@
+<section class="text-gray-600 body-font relative">
+  <div class="mx-auto flex px-5 md:px-20 lg:py-24 md:flex-row flex-col items-center">
+    <div class="w-1/2 md:order-last" data-aos="zoom-in-left" data-aos-duration="1500">
+      <img class="object-cover object-center rounded" alt="hero" src="/assets/23.png" />
+    </div>
+    <div
+      data-aos="zoom-in-right"
+      data-aos-duration="1500"
+      class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+    >
+      <h1
+        data-aos="zoom-in-up"
+        data-aos-duration="1500"
+        class="title-font lg:text-5xl text-3xl mb-6 font-medium text-primary mt-5 md:mt-20"
+      >
+        Hire at scale
+      </h1>
+      <p data-aos="zoom-in-up" data-aos-duration="1500" class="mb-8 leading-loose">
+        Move faster on a platform that automates the admin. From requisition to offer letter, Jobcart automates process
+        and manual tasks — like getting approvals, creating reports, managing compliance, and more.
+      </p>
+      <div data-aos="zoom-in-up" data-aos-duration="1500" class="flex justify-center">
+        <button class="btn text-white btn-primary btn-wide">Talk to Us</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="text-gray-600 body-font">
+  <div class="container px-5 lg:py-24 mx-auto">
+    <div data-aos="zoom-in-right" data-aos-duration="1500" class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+      <span class="inline-block h-1 w-10 rounded bg-primary mt-8 mb-6"></span>
+      <p class="leading-relaxed text-lg">
+        “Our board members prefer Hiring Plan reports over our own budget reporting. They’re clearer, more convenient
+        and, because every requisition’s recorded and the data’s up-to-date, they trust them as a singlesource of
+        truth.”
+      </p>
+      <div class="avatar my-5">
+        <div class="w-14 rounded-full ring-offset-base-100 ring-offset-2">
+          <img src="/assets/testimonial3.png" />
+        </div>
+      </div>
+      <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Anna-Katje Sparke</h2>
+      <p class="text-gray-500">HR Manager, Deposit Solutions</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-50 text-gray-700 px-5 py-10 md:py-24 md:px-20 my-10">
+  <div class="flex justify-center">
+    <div class="lg:w-2/3 md:flex justify-center items-center">
+      <div class="md:w-1/2">
+        <p data-aos="zoom-in-up" data-aos-duration="1500" class="text-4xl font-semibold my-10">
+          Streamline your applicant tracking process
+        </p>
+        <p data-aos="zoom-in-up" data-aos-duration="1500" class="text-sm mb-5 text-gray-400">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet veniam ut quaerat ab possimus quisquam
+          recusandae! Nobis vitae iusto nulla dolorem temporibus rerum consequatur soluta, id quis nihil cupiditate
+          ipsam!
+        </p>
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          (click)="accordionTab = 1"
+          class="collapse collapse-arrow shadow-md rounded-none px-2"
+          [ngClass]="accordionTab === 1 ? 'border-l-2 border-primary' : ''"
+        >
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-medium">Automated actions</div>
+          <div class="collapse-content">
+            <p class="text-gray-400">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, repellendus qui eligendi illum debitis
+              dolorum culpa omnis laborum magnam veritatis consequuntur, deserunt dolores doloribus libero sed.
+              Consequuntur ducimus repellendus quibusdam.
+            </p>
+          </div>
+        </div>
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          (click)="accordionTab = 2"
+          class="collapse collapse-arrow shadow-md my-5 rounded-none px-2"
+          [ngClass]="accordionTab === 2 ? 'border-l-2 border-primary' : ''"
+        >
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">Hiring plan</div>
+          <div class="collapse-content">
+            <p class="text-gray-400">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, sint! Fugiat maxime ut deserunt sed
+              amet, molestiae non laborum aperiam quisquam tempore quam aspernatur alias voluptates nihil, blanditiis,
+              ab illo?
+            </p>
+          </div>
+        </div>
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          (click)="accordionTab = 3"
+          class="collapse collapse-arrow shadow-md rounded-none px-2"
+          [ngClass]="accordionTab === 3 ? 'border-l-2 border-primary' : ''"
+        >
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">Requisition and approval workflows</div>
+          <div class="collapse-content">
+            <p class="text-gray-400">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam eos at quis maiores soluta magni
+              praesentium minima labore facilis, velit itaque dolorum tenetur similique, ullam maxime distinctio fugiat
+              vel placeat!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <img
+          data-aos="zoom-in-right"
+          data-aos-duration="1500"
+          [src]="accordionTab === 1 ? '/assets/8.jpg' : accordionTab === 2 ? '/assets/11.jpg' : '/assets/12.jpg'"
+          class="md:ml-20 object-center"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="p-5 md:py-24 md:px-20 my-10 text-neutral">
+  <div class="flex justify-center">
+    <div class="lg:w-2/3 md:flex justify-center items-center">
+      <div class="md:w-1/2">
+        <img
+          data-aos="zoom-in-right"
+          data-aos-duration="1500"
+          [src]="accordion2Tab === 1 ? '/assets/8.jpg' : accordion2Tab === 2 ? '/assets/11.jpg' : '/assets/12.jpg'"
+          class="md:-mt-20 md:-ml-20 object-center"
+          alt=""
+        />
+      </div>
+      <div class="md:w-1/2">
+        <p data-aos="zoom-in-up" data-aos-duration="1500" class="text-4xl font-semibold my-10">
+          Track performance and recruiting reports and analytics
+        </p>
+        <p data-aos="zoom-in-up" data-aos-duration="1500" class="text-sm mb-5 text-gray-400">
+          Ensure your hiring team knows what’s up, what’s next and what’s left to do. At each login, Jobcart greets
+          users with a clear view of where things stand for each job and every candidate. Need to ask a question to a
+          teammate? You can @ mention their name for a quick reply, without leaving the system.
+        </p>
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          (click)="accordion2Tab = 1"
+          class="collapse collapse-arrow shadow-md rounded-none px-2"
+          [ngClass]="accordion2Tab === 1 ? 'border-l-2 border-primary' : ''"
+        >
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-medium">Built-in reports and analytics</div>
+          <div class="collapse-content">
+            <p class="text-gray-400">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis est blanditiis, ab aliquid laudantium
+              quibusdam! Magnam placeat repudiandae quibusdam eaque officia accusamus voluptatem at dignissimos dolores,
+              minus, impedit pariatur eveniet.
+            </p>
+          </div>
+        </div>
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          (click)="accordion2Tab = 2"
+          class="collapse collapse-arrow shadow-md my-5 rounded-none px-2"
+          [ngClass]="accordion2Tab === 2 ? 'border-l-2 border-primary' : ''"
+        >
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">Candidate surveys</div>
+          <div class="collapse-content">
+            <p class="text-gray-400">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error dignissimos, sunt reiciendis quisquam
+              perspiciatis iure ipsum commodi sequi a nisi est, facilis ea! Repudiandae, id excepturi qui esse eius
+              natus.
+            </p>
+          </div>
+        </div>
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          (click)="accordion2Tab = 3"
+          class="collapse collapse-arrow shadow-md rounded-none px-2"
+          [ngClass]="accordion2Tab === 3 ? 'border-l-2 border-primary' : ''"
+        >
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">Advanced and custom reporting</div>
+          <div class="collapse-content">
+            <p class="text-gray-400">
+              Dig deeper to answer even your most complex questions. Need more robust analytics? Jobcart provides access
+              to your raw recruiting data via Amazon Redshift and integrates with preferred business intelligence tools,
+              including Tableau so you can create advanced dashboards, measure custom KPIs and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-blue-50 text-gray-700 p-5 py-10 md:py-24 md:px-20 my-10">
+  <div class="flex flex-col md:flex-row justify-center">
+    <div class="lg:w-2/3 flex flex-col md:flex-row justify-center mt-20">
+      <div class="md:w-1/2 md:order-last">
+        <img data-aos="zoom-in-left" data-aos-duration="1500" src="/assets/gdpr.svg" alt="" />
+      </div>
+      <div class="flex flex-col gap-5 md:w-1/2">
+        <p data-aos="zoom-in-right" data-aos-duration="1500" class="md:text-xl lg:text-5xl font-semibold">
+          Manage and demonstrate compliance
+        </p>
+        <p data-aos="zoom-in-right" data-aos-duration="1500" class="text-gray-400">
+          As more data privacy and employment regulations are signed into law, managing compliance gets more
+          complicated. Jobcart helps you navigate local, national and international regulation - including GDPR and
+          EEOC/OFCCP - with automated tools and reports that take the effort out of compliance, wherever you’re hiring.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col md:flex-row justify-center">
+    <div class="lg:w-2/3 flex flex-col md:flex-row justify-center mt-20">
+      <div class="">
+        <img
+          data-aos="zoom-in-right"
+          data-aos-duration="1500"
+          src="/assets/Connect-your-tech.svg"
+          class="md:-ml-20"
+          alt=""
+        />
+      </div>
+      <div class="flex flex-col justify-center gap-5 md:w-1/2 lg:pl-10">
+        <p data-aos="zoom-in-left" data-aos-duration="1500" class="md:text-xl lg:text-5xl font-semibold">
+          Connect your tech
+        </p>
+        <p data-aos="zoom-in-left" data-aos-duration="1500" class="text-gray-400">
+          We partner with the biggest names and most popular tools in recruiting and HR. Which means you can access
+          everything you need to make your next great hire - including background checks, onboarding, HRIS and more -
+          without ever leaving Jobcart.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-lets-grow></app-lets-grow>

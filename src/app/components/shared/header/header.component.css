@@ -1,0 +1,30 @@
+.fixed{
+    position: fixed;
+    width: 100%;
+    transition: 0.2s linear;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.nofixed{
+    position: static;
+    transition: 0.2s linear;
+    background-color: #267F6A;
+}
+.fixed .text-clr{
+color: #267F6A;
+}
+.text-clr{
+    color: #fff;
+}
+#mega-menu-full {
+    font-size: 21px !important;
+    font-weight: 900 !important;
+}
+.login-button{
+    font-size: 20px !important;
+}
+.sub-menu{
+    font-size: 20px !important;
+}

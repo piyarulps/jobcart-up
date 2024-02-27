@@ -1,0 +1,50 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db
+/.vs/PMG.UI/FileContentIndex/read.lock
+/.vs/PMG.UI/FileContentIndex/e7f6b029-29d0-4f99-af38-3c82c9f2d5f5.vsidx
+/.vs/PMG.UI/FileContentIndex/cab561a4-47b1-4544-88d7-0d0db9e5be0d.vsidx
+/.vs/PMG.UI/FileContentIndex/855197ef-ed83-452a-99ca-bc0da60d235a.vsidx
+/.vs/PMG.UI/FileContentIndex/09ea8cf8-75d8-4ff9-8544-7fafb8d6c22f.vsidx
+/.vs/PMG.UI/FileContentIndex
+*.sqlite
+*.config
