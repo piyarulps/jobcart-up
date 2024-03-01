@@ -26,7 +26,7 @@
 }
 .container_container__NjHmW {
     margin: 0 auto;
-    max-width: 1250px;
+    max-width: 1536px;
     position: relative;
     width: 100%;
 }
@@ -42,10 +42,7 @@
     border-bottom: 1px solid #4b4a67;
     padding: 40px 0;
 }
-.container-fluid {
-    padding-left: 16px;
-    padding-right: 16px;
-}
+
 .col-xs-12 {
     flex-basis: 100%;
     max-width: 100%;
